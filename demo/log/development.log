@@ -214,3 +214,725 @@ SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
   Parameters: {"action"=>"hello", "controller"=>"say"}
 Rendering say/hello
 Completed in 0.00272 (368 reqs/sec) | Rendering: 0.00098 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 17:48:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.11099 (9 reqs/sec) | Rendering: 0.10910 (98%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 17:50:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+ERROR: compiling _run_erb_47app47views47say47hello46rhtml RAISED compile error
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/app/views/say/hello.rhtml:15: syntax error, unexpected kDO, expecting kEND
+;  end do ; _erbout.concat "\nMerry Christmas\n</Body>\n</html>\n"
+         ^
+Function body: def _run_erb_47app47views47say47hello46rhtml(local_assigns)
+_erbout = ''; _erbout.concat "<html>\n<Head>\n<Title>Hello from Rails</Title>\n</Head>\n<Body>\n<h1>Say Hello from Rails</h1>\n<ul>\n\t<li>Addition: "
+
+
+
+
+
+
+; _erbout.concat(( 1+2 ).to_s); _erbout.concat " </li>\n\t<li>Concatenation: "
+; _erbout.concat(( "cow" + "boy" ).to_s); _erbout.concat "</li>\n\t<li>Time in one hour: "
+; _erbout.concat(( 1.hour.from_now ).to_s); _erbout.concat "</li>\n</ul>\n\n"
+
+
+;  3.times do ; _erbout.concat "\nHo! <br />\n"
+
+;  end do ; _erbout.concat "\nMerry Christmas\n</Body>\n</html>\n"
+
+
+
+; _erbout
+end
+Backtrace: /home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/app/views/say/hello.rhtml:20:in `compile_template'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_view/template.rb:55:in `prepare!'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_view/template.rb:34:in `render'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/base.rb:841:in `render_with_no_layout'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/base.rb:1157:in `default_render'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+/usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+/usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+/usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+/usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+/usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+/usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+/usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/1.8/mongrel_rails:282
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/railties/lib/commands/server.rb:39
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/app/views/say/hello.rhtml:15: syntax error, unexpected kDO, expecting kEND
+;  end do ; _erbout.concat "\nMerry Christmas\n</Body>\n</html>\n"
+         ^) on line #15 of say/hello.rhtml:
+12: 
+13: <% 3.times do %>
+14: Ho! <br />
+15: <% end do %>
+16: Merry Christmas
+17: </Body>
+18: </html>
+
+    app/views/say/hello.rhtml:20:in `compile_template'
+    vendor/rails/actionpack/lib/action_view/template.rb:55:in `prepare!'
+    vendor/rails/actionpack/lib/action_view/template.rb:34:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1157:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 17:50:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00313 (318 reqs/sec) | Rendering: 0.00134 (42%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 17:53:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00303 (329 reqs/sec) | Rendering: 0.00128 (42%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 17:57:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00346 (288 reqs/sec) | Rendering: 0.00158 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 17:58:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00313 (319 reqs/sec) | Rendering: 0.00140 (44%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:01:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00337 (296 reqs/sec) | Rendering: 0.00160 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:04:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00332 (300 reqs/sec) | Rendering: 0.00156 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:06:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00314 (318 reqs/sec) | Rendering: 0.00149 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:06:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00259 (386 reqs/sec) | Rendering: 0.00082 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:06:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00242 (413 reqs/sec) | Rendering: 0.00077 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:16:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+
+
+ActionView::MissingTemplate (Missing template say/goodbye.html.erb in view path /home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/app/views):
+    /vendor/rails/actionpack/lib/action_view/template.rb:85:in `raise_missing_template_exception'
+    /vendor/rails/actionpack/lib/action_view/template.rb:78:in `set_extension_and_file_name'
+    /vendor/rails/actionpack/lib/action_view/template.rb:15:in `initialize'
+    /vendor/rails/actionpack/lib/action_view/base.rb:245:in `new'
+    /vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1157:in `default_render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:18:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+
+
+ActionView::MissingTemplate (Missing template say/goodbye.html.erb in view path /home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/app/views):
+    /vendor/rails/actionpack/lib/action_view/template.rb:85:in `raise_missing_template_exception'
+    /vendor/rails/actionpack/lib/action_view/template.rb:78:in `set_extension_and_file_name'
+    /vendor/rails/actionpack/lib/action_view/template.rb:15:in `initialize'
+    /vendor/rails/actionpack/lib/action_view/base.rb:245:in `new'
+    /vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1157:in `default_render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:18:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00295 (339 reqs/sec) | Rendering: 0.00100 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:18:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+
+
+ActionView::MissingTemplate (Missing template say/goodbye.html.erb in view path /home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/app/views):
+    /vendor/rails/actionpack/lib/action_view/template.rb:85:in `raise_missing_template_exception'
+    /vendor/rails/actionpack/lib/action_view/template.rb:78:in `set_extension_and_file_name'
+    /vendor/rails/actionpack/lib/action_view/template.rb:15:in `initialize'
+    /vendor/rails/actionpack/lib/action_view/base.rb:245:in `new'
+    /vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1157:in `default_render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/christian2/Studium/Ruby_on_rails/RubyOnRailsTests/demo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:19:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00259 (385 reqs/sec) | Rendering: 0.00090 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:22:18) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00326 (307 reqs/sec) | Rendering: 0.00157 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:22:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00254 (393 reqs/sec) | Rendering: 0.00088 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:22:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00239 (418 reqs/sec) | Rendering: 0.00074 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:28:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00443 (225 reqs/sec) | Rendering: 0.00259 (58%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:29:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00300 (333 reqs/sec) | Rendering: 0.00122 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:29:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00286 (349 reqs/sec) | Rendering: 0.00104 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:29:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00330 (303 reqs/sec) | Rendering: 0.00131 (39%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:29:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00305 (327 reqs/sec) | Rendering: 0.00125 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:30:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00295 (338 reqs/sec) | Rendering: 0.00119 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:30:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00283 (353 reqs/sec) | Rendering: 0.00103 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:30:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00284 (352 reqs/sec) | Rendering: 0.00088 (30%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:44:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00280 (356 reqs/sec) | Rendering: 0.00102 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:45:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00283 (353 reqs/sec) | Rendering: 0.00108 (38%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:47:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00246 (406 reqs/sec) | Rendering: 0.00075 (30%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:47:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00274 (364 reqs/sec) | Rendering: 0.00106 (38%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:47:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00344 (291 reqs/sec) | Rendering: 0.00169 (49%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 18:48:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00278 (359 reqs/sec) | Rendering: 0.00101 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:48:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00310 (323 reqs/sec) | Rendering: 0.00130 (41%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:51:03) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00325 (307 reqs/sec) | Rendering: 0.00132 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:51:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00318 (314 reqs/sec) | Rendering: 0.00133 (41%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 18:51:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00328 (304 reqs/sec) | Rendering: 0.00140 (42%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 20:26:10) [GET]
+  Session ID: 0e17e03a2294e34f7e520cb1375a6505
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.05587 (17 reqs/sec) | Rendering: 0.05412 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 20:26:18) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00305 (328 reqs/sec) | Rendering: 0.00134 (43%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 20:31:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00270 (370 reqs/sec) | Rendering: 0.00098 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2009-05-21 20:31:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"goodbye", "controller"=>"say"}
+Rendering say/goodbye
+Completed in 0.00262 (381 reqs/sec) | Rendering: 0.00078 (29%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2009-05-21 20:31:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--8d5d9da4b6e5b04d7e538a274bb52b1e2fe51db4
+  Parameters: {"action"=>"hello", "controller"=>"say"}
+Rendering say/hello
+Completed in 0.00266 (375 reqs/sec) | Rendering: 0.00094 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/say/hello]
