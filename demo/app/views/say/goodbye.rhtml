@@ -1,0 +1,21 @@
+<html>
+<Head>
+<Title>See You Later!</Title>
+</Head>
+<Body>
+<h1>Goodbye!</h1>
+<p>
+It was nice having you here.
+</p>
+<p>
+Say <%= link_to "Hello", :action => "hello" %> again
+</p>
+<p>
+Files ausgeben:<br />
+<% for file in @files %>
+file name: <%= file %><br />
+<% end %>
+</p>
+
+</Body>
+</html>
